@@ -1,0 +1,33 @@
+### Project path
+server:
+  port: ${SERVER_PORT:8080}
+
+### Spring settings
+spring:
+  # DATABASE
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/loyalty}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  # JACKSON
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+
+### Spring Doc (Swagger UI)
+springdoc:
+  api-docs:
+    path: /api-documentation

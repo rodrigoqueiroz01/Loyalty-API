@@ -1,0 +1,17 @@
+package com.rq.loyalty.model.enums;
+
+public enum LastEventType {
+
+    CREATED,
+    CONFIRMED,
+    DISPATCHED,
+    READY_FOR_PICKUP,
+    PICKUP_AREA_ASSIGNED,
+    DELIVERED,
+    CONCLUDED,
+    CANCELLATION_REQUESTED,
+    CANCELLATION_REQUEST_DENIED,
+    CANCELLED,
+    ORDER_CANCELLATION_REQUEST;
+
+}
