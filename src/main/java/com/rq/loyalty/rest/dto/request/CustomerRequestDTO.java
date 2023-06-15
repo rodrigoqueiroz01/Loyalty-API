@@ -13,7 +13,7 @@ public class CustomerRequestDTO {
     @CPF(message = "Enter only the CPF numbers.")
     @NotBlank(message = "Document field is mandatory.")
     @Length(min = 11, max = 11, message = "Please respect the 11 character limit.")
-    private String document;
+    private String CPF;
 
     @NotBlank(message = "Name field is mandatory.")
     private String name;

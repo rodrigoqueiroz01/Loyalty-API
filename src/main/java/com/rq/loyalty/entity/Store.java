@@ -29,8 +29,8 @@ public class Store implements Serializable {
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @Column(nullable = false, length = 14)
-    private String document;
+    @Column(name = "document", nullable = false, length = 14)
+    private String documentCNPJ;
 
     @Column(nullable = false)
     private String name;

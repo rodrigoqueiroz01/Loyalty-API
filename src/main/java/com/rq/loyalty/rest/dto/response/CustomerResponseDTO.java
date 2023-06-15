@@ -14,7 +14,7 @@ public class CustomerResponseDTO {
 
     private String customerId;
     private LocalDateTime createdAt = LocalDateTime.now();
-    private String document;
+    private String CPF;
     private String name;
 
 }

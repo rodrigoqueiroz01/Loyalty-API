@@ -28,8 +28,8 @@ public class Customer implements Serializable {
 
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    @Column(nullable = false, length = 11, unique = true)
-    private String document;
+    @Column(name = "document", nullable = false, length = 11, unique = true)
+    private String documentCPF;
 
     @Column(nullable = false, unique = true)
     private String name;

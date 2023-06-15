@@ -14,7 +14,7 @@ public class StoreMapper {
 
     public static Store toModel(StoreRequestDTO storeRequest) {
         return Store.builder()
-                .document(storeRequest.getDocument())
+                .documentCNPJ(storeRequest.getCNPJ())
                 .name(storeRequest.getName())
                 .build();
     }
@@ -23,7 +23,7 @@ public class StoreMapper {
         return StoreResponseDTO.builder()
                 .storeId(store.getStoreId())
                 .createdAt(store.getCreatedAt())
-                .document(store.getDocument())
+                .CNPJ(store.getDocumentCNPJ())
                 .name(store.getName())
                 .build();
     }

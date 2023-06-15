@@ -14,7 +14,7 @@ public class StoreResponseDTO {
 
     private String storeId;
     private LocalDateTime createdAt = LocalDateTime.now();
-    private String document;
+    private String CNPJ;
     private String name;
 
 }

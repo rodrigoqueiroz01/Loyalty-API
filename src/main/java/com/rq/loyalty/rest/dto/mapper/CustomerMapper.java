@@ -14,7 +14,7 @@ public class CustomerMapper {
 
     public static Customer toModel(CustomerRequestDTO customerRequest) {
         return Customer.builder()
-                .document(customerRequest.getDocument())
+                .documentCPF(customerRequest.getCPF())
                 .name(customerRequest.getName())
                 .build();
     }
@@ -23,7 +23,7 @@ public class CustomerMapper {
         return CustomerResponseDTO.builder()
                 .customerId(customer.getCustomerId())
                 .createdAt(customer.getCreatedAt())
-                .document(customer.getDocument())
+                .CPF(customer.getDocumentCPF())
                 .name(customer.getName())
                 .build();
     }
